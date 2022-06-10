@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap');
+
+:root{
+  --font:'Raleway', sans-serif;
+}
+
+*{
+  color: white;
+  font-family: var(--font);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.logo{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+div.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container h1{
+  font-size: 64px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+hr{
+  width: 40%;
+  margin: auto;
+  border: 1px solid #aaa;
+}
+
+.container p{
+  padding-top: 20px;
+  /* border-top: 1px solid white; */
+  width: 200px;
+  margin: auto;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.copyright{
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+}
+
+@media screen and (max-width:450px){
+  .container h1{
+    font-size: 50px;
+  }
+
+  .container p{
+    font-size: 16px;
+  }
+
+  .logo{
+    font-size: 20px;
+  }
+  .copyright{
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    right: 0;
+  }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cafe</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/480696a9b9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+
+    <!-- ------------------------------- Navigation Bar ------------------------------- -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#where">Where</a></li>
+      </ul>
+    </nav>
+    <!-- ---------------x--------------- Navigation Bar ---------------x--------------- -->
+
+
+    <!-- ------------------------------- Header ------------------------------- -->
+    <header id="home">
+      <h1>the<br />cafe</h1>
+      <span>Open from 6am to 5pm</span>
+    </header>
+    <!-- ---------------x--------------- Header ---------------x--------------- -->
+
+
+    <main class="container grayscale">
+      <!-- ------------------------------- about the cafe ------------------------------- -->
+
+      <div class="about" id="about">
+        <h2><span>about the cafe</span></h2>
+        <p class="text">
+          The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit
+          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p class="text">
+          In addition to our full espresso and brew bar menu, we serve fresh
+          made-to-order breakfast and lunch sandwiches, as well as a selection
+          of sides and salads and other good stuff.
+        </p>
+        <div>
+          <p>
+            <i
+              >"Use products from nature for what it's worth - but never too
+              early, nor too late." Fresh is the new sweet.</i
+            >
+          </p>
+          <br />
+          <p>Chef, Coffeeist and Owner: Liam Brown</p>
+        </div>
+        <img src="https://www.w3schools.com/w3images/coffeeshop.jpg" alt="coffeeshop" />
+        <p><b>Opening hours: </b> everyday from 6am to 5pm</p>
+        <p><b>Address:</b> 15 Adr street, 5015, NY</p>
+      </div>
+
+      <!-- ---------------x--------------- about the cafe ---------------x--------------- -->
+
+
+      <!-- ------------------------------- the menu ------------------------------- -->
+      <div class="menu" id="menu">
+        <h2><span>The Menu</span></h2>
+        <div class="title">
+          <span id="eat-title" onclick="toggleEat()">Eat</span>
+          <span id="drink-title" onclick="toggleDrink()">Drink</span>
+        </div>
+        <div class="menu-items">
+          <div id="eat">
+            <p>
+              <b>Bread Basket</b><br /><br />
+              Assortment of fresh baked fruit beards and muffins 5.50
+            </p>
+            <p>
+              <b>Honey Almond Granola with Fruits</b><br /><br />
+              Natural cereal of honey toasted oats, raisins, almonds and dates
+              7.00
+            </p>
+            <p>
+              <b>Belgian Waffle</b><br /><br />
+              Vanilla flavored batter with malted flour 7.50
+            </p>
+            <p>
+              <b>Scrambled eggs</b><br /><br />
+              Scrambled eggs, roasted red pepper and garlic, with green onions
+              7.50
+            </p>
+            <p>
+              <b>Blueberry Pancakes</b><br /><br />
+              With syrup, butter and lots of berries 8.50
+            </p>
+          </div>
+          <div id="drink">
+            <p>
+              <b>Coffee</b><br /><br />
+              Regular coffee 2.50
+            </p>
+            <p>
+              <b>Chocolato</b><br /><br />
+              Chocolate espresso with milk 4.50
+            </p>
+            <p>
+              <b>Corretto</b><br /><br />
+              Whiskey and coffee 5.00
+            </p>
+            <p>
+              <b>Iced tea</b><br /><br />
+              Hot tea, except not hot 3.00
+            </p>
+            <p>
+              <b>Soda</b><br /><br />
+              Coke, Sprite, Fanta, etc. 2.50
+            </p>
+          </div>
+        </div>
+        <img src="https://www.w3schools.com/w3images/coffeehouse2.jpg" alt="" />
+      </div>
+      <!-- ---------------x--------------- the menu ---------------x--------------- -->
+      
+
+      <!-- ------------------------------- where to find us ------------------------------- -->
+      <div class="where" id="where">
+        <h2><span>Where to find us</span></h2>
+        <p>Find us at some address at some place</p>
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="Map" />
+        <p>
+          <span>FYI!</span> We offer full-service catering for any event, large
+          or small. We understand your needs and we will cater the food to
+          satisfy the biggerst criteria of them all, both look and taste.
+        </p>
+        <br />
+        <p>
+          <b>Reserve</b> a table, ask for today's special or just send us a
+          message:
+        </p>
+      </div>
+      <!-- ---------------x--------------- where to find us ---------------x--------------- -->
+
+      <!-- ------------------------------- form ------------------------------- -->
+      <form action="">
+        <input type="text" placeholder="Name" required />
+        <input type="number" value="0" required />
+        <input type="datetime-local" value="2021-09-19T20:00" required />
+        <textarea
+          name=""
+          id=""
+          rows="3"
+          placeholder="Message \ Special requirements"
+        ></textarea>
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+      <!-- ---------------x--------------- form ---------------x--------------- -->
+    </main>
+
+    <footer>From w3schools template.</footer>
+
+    <script src="script.js">
+    </script>
+  </body>
+</html>

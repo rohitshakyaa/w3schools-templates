@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+/* -------------- navigation bar -------------- */
+
+:root{
+  --nav-height: 40px;
+}
+
+nav{
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+nav ul{
+  height: var(--nav-height);
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li a{
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+nav ul li a:not(.logo):hover, .menu-icon:hover{
+  background-color: #fffbde;
+  color: black;
+}
+
+.logo{
+  background: #333;
+}
+
+.logo:hover{
+  background-color: #cccccc;
+  color: black;
+}
+
+
+.menu-icon{
+  font-size: 20px;
+  color: white;
+  background-color: #333333;
+  padding: 6px 20px;
+  margin-left: auto;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+
+
+/* -------------- Menu -------------- */
+
+.menu{
+  background-color: #f0f0f0;
+  height: calc(100% - var(--nav-height));
+  position: fixed;
+  top: var(--nav-height);
+  width: 250px;
+  display: block;
+  animation: animateLeft;
+  animation-duration: 0.4s;
+  z-index: 2;
+}
+
+.menu h2{
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.menu a{
+  display: block;
+  padding: 17px;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+
+.menu a:hover{
+  background-color: black;
+  color: white;
+}
+
+.menu i{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  display: none;
+  cursor: pointer;
+  padding: 20px 25px;
+}
+
+.menu i:hover{
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+
+/* -------------- Headings -------------- */
+
+main{
+  width: calc(100% - 250px);
+  float: right;
+  padding: 50px 0 0;
+}
+
+.display-flex{
+  display: flex;
+  padding: 40px 15px;
+  flex-wrap: wrap;
+}
+
+.col-70{
+  width: 65%;
+  margin-right: 5%;
+  
+}
+
+.col-70 h1{
+  font-size: 36px;
+  letter-spacing: -1px;
+  padding-bottom: 20px;
+  color: #009688;
+  font-weight: 400;
+}
+
+.col-70 p{
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.col-30{
+  width: 30%;
+}
+
+.ad{
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.small-ad{
+  height: 90px;
+}
+
+.large-ad{
+  height: 150px;
+}
+
+
+
+
+
+
+/* -------------- Pagination -------------- */
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.pagination span{
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.5;
+  vertical-align: center;
+}
+
+.pagination i{
+  font-size: 10px;
+}
+
+
+.pagination span:not(.active):hover{
+  background-color: black;
+  color: white;
+}
+
+.active{
+  background-color: black;
+  color: white;
+}
+
+.active:hover{
+  background-color: #ccc;
+  color: black;
+}
+
+
+
+
+
+
+
+/* -------------- Footer -------------- */
+
+footer{
+  width: 100%;
+  color: white;
+}
+
+footer div{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+footer div:first-child{
+  background-color: #666666;
+  font-size: 20px;
+  height: 100px;
+}
+
+footer div:last-child{
+  background-color: #333333;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+#overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+
+
+
+
+
+
+
+/* -------------- Media Queries -------------- */
+
+@media only screen and (min-width: 1000px){
+  .menu{
+    display: block !important;
+  }
+
+  #overlay{
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .nav2{
+    display: none;
+  }
+
+  .menu-icon{
+    display: block;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .menu i{
+    display: block;
+  }
+
+  main{
+    width: 100%;
+    float: none;
+  }
+
+  nav ul li a{
+    padding: 9.5px 20px;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  .nav1{
+    display: none;
+  }
+
+  .col-70, .col-30{
+    width: 100%;
+  }
+
+}
+
+@keyframes animateLeft{
+  from{
+    left: -300px;
+    opacity: 0;
+  }
+
+  to{
+    left: 0;
+    opacity: 1;
+  }
+}

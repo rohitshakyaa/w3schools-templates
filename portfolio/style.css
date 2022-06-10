@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+:root {
+  /* Colors */
+  --text-grey: #757575;
+  --text-teal: #009688;
+  --color3: #f1f1f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ---------------------------- ALL ---------------------------- */
+
+.card {
+  box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 20%);
+  background-color: white;
+}
+
+i {
+  color: var(--text-teal);
+}
+
+main {
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+hr {
+  border: 1px solid #eee;
+  margin: 30px 0;
+}
+
+main > div {
+  padding: 5px 8px;
+}
+
+/* -------------x-------------- ALL -------------x-------------- */
+
+/* ---------------------------- Main Profile ---------------------------- */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-30 {
+  width: 33.33%;
+}
+
+.col-30 p {
+  color: var(--text-grey);
+}
+
+.col-30 .info {
+  padding: 10px 25px;
+}
+
+.col-70 {
+  width: 66.66%;
+}
+
+/* ---------------------------- General Info ---------------------------- */
+
+.profile-pic {
+  position: relative;
+}
+
+.profile-pic img {
+  width: 100%;
+}
+
+.profile-pic p {
+  font-size: 30px;
+  font-weight: normal;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: black !important;
+}
+
+.general-info p {
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.general-info i {
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+/* -------------x-------------- General Info -------------x-------------- */
+
+/* ---------------------------- Skills ---------------------------- */
+
+.skills > p,
+.languages > p {
+  padding: 10px 10px;
+}
+
+.header {
+  padding: 0 0px 20px;
+}
+
+.header b {
+  font-weight: bolder;
+  font-size: 18px;
+  color: var(--text-grey);
+  padding-left: 10px;
+}
+
+.header i {
+  font-size: 20px;
+}
+
+.outer-bar {
+  width: 100%;
+  background-color: var(--color3);
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  height: 18px;
+  margin-bottom: 20px;
+}
+
+.inner-bar {
+  height: 100%;
+  background-color: var(--text-teal);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-bar p {
+  font-size: 12px;
+  color: white;
+}
+
+.inner-bar.photoshop {
+  width: 90%;
+}
+
+.inner-bar.photography {
+  width: 80%;
+}
+
+.inner-bar.illustrator {
+  width: 75%;
+}
+
+.inner-bar.media {
+  width: 50%;
+}
+
+/* -------------x-------------- Skills -------------x-------------- */
+
+/* ---------------------------- Languages ---------------------------- */
+
+.languages {
+  margin-top: 50px;
+}
+
+.languages .outer-bar {
+  height: 24px;
+}
+
+.inner-bar.english {
+  width: 100%;
+}
+
+.inner-bar.spanish {
+  width: 60%;
+}
+
+.inner-bar.german {
+  width: 25%;
+}
+
+/* -------------x-------------- Languages -------------x-------------- */
+
+/* -------------x-------------- Main Profile -------------x-------------- */
+
+/* ---------------------------- Aside ---------------------------- */
+
+/* ---------------------------- Work Experience ---------------------------- */
+
+.col-70 .card {
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.title h1 {
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--text-grey);
+}
+
+.title i {
+  padding-right: 15px;
+  font-size: 35px;
+  line-height: 1.5;
+}
+
+.title {
+  padding-bottom: 30px;
+}
+
+.desc h3 {
+  opacity: 0.6;
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+.desc {
+  padding: 13px;
+}
+
+.desc .date {
+  padding: 5px 0 15px;
+}
+
+.desc .date {
+  font-size: 16px;
+  color: var(--text-teal);
+}
+
+.desc .date i {
+  padding-right: 5px;
+}
+
+.desc .date span {
+  background-color: var(--text-teal);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.desc p:last-child {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* -------------x-------------- Work Experience -------------x-------------- */
+
+/* ---------------------------- Education ---------------------------- */
+
+/* All styles are same of work experience  */
+
+/* -------------x-------------- Education -------------x-------------- */
+
+/* -------------x-------------- Aside -------------x-------------- */
+
+/* ---------------------------- Footer ---------------------------- */
+
+footer {
+  background-color: var(--text-teal);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  padding: 7px;
+}
+
+footer p:last-child {
+  font-size: 14px;
+  opacity: 0.3;
+  padding: 15px;
+}
+
+footer i {
+  color: white;
+  cursor: pointer;
+}
+
+footer i:hover {
+  opacity: 0.6;
+}
+
+/* -------------x-------------- Footer -------------x-------------- */
+
+@media only screen and (max-width: 600px) {
+  .col-30,
+  .col-70 {
+    width: 100%;
+  }
+}
