@@ -38,7 +38,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   text-align: center;
-  width: calc(25% - 6px);
+  width: calc(25% - 10px);
   height: 40px;
 }
 

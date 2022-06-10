@@ -1,0 +1,27 @@
+:root{
+    --margin: 10px;
+}
+
+#goback {
+    position: fixed;
+    z-index: 2;
+    bottom: var(--margin);
+    right: var(--margin);
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#goback:hover {
+    opacity: 0.5;
+}
+
+.iframe{
+    height: 500px;
+    width: 500px;
+}
