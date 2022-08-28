@@ -1,278 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pizza Hut</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Hut</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="../back.css">
-
-</head>
-<body>
-  <a id="goback" href="../">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../back.css" />
+  </head>
+  <body>
+    <!-- <a id="goback" href="../">
     See all w3schools templates
-  </a>
+  </a> -->
 
-<!-- ------------------------------- Navigation Menu ------------------------------- -->
-<nav>
-  <ul>
-    <li><a href="#Home">Home</a></li>
-    <li><a href="#Menu">Menu</a></li>
-    <li><a href="#About">About</a></li>
-    <li><a href="#Contact">Contact</a></li>
-  </ul>
-</nav>
-<!-- ---------------x--------------- Navigation Menu ---------------x--------------- -->
+    <!-- ------------------------------- Navigation Menu ------------------------------- -->
+    <nav>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Menu">Menu</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- ---------------x--------------- Navigation Menu ---------------x--------------- -->
 
+    <!-- ------------------------------- Header ------------------------------- -->
+    <header id="Home">
+      <section>
+        <h1>Thin<br />Crust pizza</h1>
+        <div>Let me see the menu</div>
+      </section>
+      <span>Open From 10AM mto 12PM</span>
+    </header>
+    <!-- ---------------x--------------- Header ---------------x--------------- -->
 
-<!-- ------------------------------- Header ------------------------------- -->
-  <header id="Home">
-    <section>
-      
-    <h1>Thin<br>Crust pizza</h1>
-    <div>Let me see the menu</div>
+    <!-- ------------------------------- The Menu ------------------------------- -->
+
+    <section id="Menu">
+      <div class="container">
+        <h2>The Menu</h2>
+        <div class="menu">
+          <div class="menu-title">
+            <span id="pizza-title" onclick="togglePizzaMenu()">Pizza</span>
+            <span id="salad-title" onclick="toggleSaladMenu()">Salad</span>
+            <span id="starter-title" onclick="toggleStarterMenu()"
+              >Starter</span
+            >
+          </div>
+          <div class="menu-items">
+            <div class="menu1" id="pizza">
+              <div class="option">
+                <div>
+                  <b>Margherita</b><br />
+                  Fresh tomatoes, fresh mozzarella, fresh basil
+                </div>
+                <div><span>$12.50</span></div>
+              </div>
+              <hr />
+              <div class="option">
+                <div>
+                  <b>Formaggio</b><br />
+                  Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)
+                </div>
+                <div><span>$15.50</span></div>
+              </div>
+              <hr />
+              <div class="option">
+                <div>
+                  <b>Chicken</b><br />
+                  Fresh tomatoes, mozzarella, chicken, onions
+                </div>
+                <div><span>$17.00</span></div>
+              </div>
+              <hr />
+              <div class="option">
+                <div>
+                  <b>Pineapple'o'clock</b><br />
+                  Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh
+                  basil
+                </div>
+                <div><span>$16.50</span></div>
+              </div>
+              <hr />
+              <div class="option">
+                <div>
+                  <b>Meat Town <span class="red-span">HOT!</span></b
+                  ><br />
+                  Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef,
+                  chicken
+                </div>
+                <div><span>$20.00</span></div>
+              </div>
+              <hr />
+              <div class="option">
+                <div>
+                  <b>Parma <span class="grey-span">New</span></b
+                  ><br />
+                  Fresh tomatoes, mozzarella, parma, bacon, fresh arugula
+                </div>
+                <div><span>$21.50</span></div>
+              </div>
+            </div>
+            <div class="menu1" id="salad">
+              <div class="option">
+                <div>
+                  <b>Lasagna <span class="grey-span">Popular</span></b
+                  ><br />
+                  Special sauce, mozzarella, parmesan, ground beef
+                </div>
+                <div><span>$13.50</span></div>
+              </div>
+              <hr />
+              <div class="option">
+                <div>
+                  <b>Ravioli</b><br />
+                  Ravioli filled with cheese
+                </div>
+                <div><span>$14.50</span></div>
+              </div>
+              <hr />
+              <div class="option">
+                <div>
+                  <b>Spaghetti Classica</b><br />
+                  Fresh tomatoes, onions, ground beef
+                </div>
+                <div><span>$11.00</span></div>
+              </div>
+              <hr />
+              <div class="option">
+                <div>
+                  <b>Seafood pasta</b><br />
+                  Salmon, shrimp, lobster, garlic
+                </div>
+                <div><span>$25.50</span></div>
+              </div>
+            </div>
+            <div class="menu1" id="starter">
+              <div class="option">
+                <div>
+                  <b>Today's Soup <span class="grey-span">Seasonal</span></b
+                  ><br />
+                  Ask the waiter
+                </div>
+                <div><span>$5.50</span></div>
+              </div>
+              <hr />
+              <div class="option">
+                <div>
+                  <b>Bruschetta</b><br />
+                  Bread with pesto, tomatoes, onion, garlic
+                </div>
+                <div><span>$8.50</span></div>
+              </div>
+              <hr />
+              <div class="option">
+                <div>
+                  <b>Garlic bread</b><br />
+                  Grilled ciabatta, garlic butter, onions
+                </div>
+                <div><span>$9.50</span></div>
+              </div>
+              <hr />
+              <div class="option">
+                <div>
+                  <b>Tomozzarella</b><br />
+                  Tomatoes and mozzarella
+                </div>
+                <div><span>$10.50</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <span>Open From 10AM mto 12PM</span>
-  </header>
-<!-- ---------------x--------------- Header ---------------x--------------- -->
 
+    <!-- ---------------x--------------- The Menu ---------------x--------------- -->
 
+    <!-- ------------------------------- About ------------------------------- -->
 
-
-<!-- ------------------------------- The Menu ------------------------------- -->
-
-<section id="Menu">
-  <div class="container">
-    <h2>The Menu</h2>
-    <div class="menu">
-      <div class="menu-title">
-        <span id="pizza-title" onclick="togglePizzaMenu()">Pizza</span>
-        <span id="salad-title" onclick="toggleSaladMenu()">Salad</span>
-        <span id="starter-title" onclick="toggleStarterMenu()">Starter</span>
-      </div>
-      <div class="menu-items">
-        <div class="menu1" id="pizza">
-          <div class="option">
-            <div>
-              <b>Margherita</b><br>
-              Fresh tomatoes, fresh mozzarella, fresh basil
-            </div>
-            <div><span>$12.50</span></div>
+    <section id="About">
+      <div class="container">
+        <h2>About</h2>
+        <div class="text">
+          <p>
+            The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <br />
+          <p><strong>The Chef?</strong> Mr. Italiaono himself</p>
+          <br />
+          <div class="para">
+            <p>We are proud of our interiors.</p>
           </div>
-          <hr>
-          <div class="option">
-            <div>
-              <b>Formaggio</b><br>
-              Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)
-            </div>
-            <div><span>$15.50</span></div>
-          </div>
-          <hr>
-          <div class="option">
-            <div>
-              <b>Chicken</b><br>
-              Fresh tomatoes, mozzarella, chicken, onions
-            </div>
-            <div><span>$17.00</span></div>
-          </div>
-          <hr>
-          <div class="option">
-            <div>
-              <b>Pineapple'o'clock</b><br>
-              Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil
-            </div>
-            <div><span>$16.50</span></div>
-          </div>
-          <hr>
-          <div class="option">
-            <div>
-              <b>Meat Town <span class="red-span">HOT!</span></b><br>
-              Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken
-            </div>
-            <div><span>$20.00</span></div>
-          </div>
-          <hr>
-          <div class="option">
-            <div>
-              <b>Parma <span class="grey-span">New</span></b><br>
-              Fresh tomatoes, mozzarella, parma, bacon, fresh arugula
-            </div>
-            <div><span>$21.50</span></div>
+          <div style="width: 150px">
+            <img src="https://www.w3schools.com/w3images/chef.jpg" alt="Chef" />
           </div>
         </div>
-        <div class="menu1" id="salad">
-          <div class="option">
-            <div>
-              <b>Lasagna <span class="grey-span">Popular</span></b><br>
-              Special sauce, mozzarella, parmesan, ground beef
-            </div>
-            <div><span>$13.50</span></div>
-          </div>
-          <hr>
-          <div class="option">
-            <div>
-              <b>Ravioli</b><br>
-              Ravioli filled with cheese
-            </div>
-            <div><span>$14.50</span></div>
-          </div>
-          <hr>
-          <div class="option">
-            <div>
-              <b>Spaghetti Classica</b><br>
-              Fresh tomatoes, onions, ground beef
-            </div>
-            <div><span>$11.00</span></div>
-          </div>
-          <hr>
-          <div class="option">
-            <div>
-              <b>Seafood pasta</b><br>
-              Salmon, shrimp, lobster, garlic
-            </div>
-            <div><span>$25.50</span></div>
-          </div>
-        </div>
-        <div class="menu1" id="starter">
-          <div class="option">
-            <div>
-              <b>Today's Soup  <span class="grey-span">Seasonal</span></b><br>
-              Ask the waiter
-            </div>
-            <div><span>$5.50</span></div>
-          </div>
-          <hr>
-          <div class="option">
-            <div>
-              <b>Bruschetta</b><br>
-              Bread with pesto, tomatoes, onion, garlic
-            </div>
-            <div><span>$8.50</span></div>
-          </div>
-          <hr>
-          <div class="option">
-            <div>
-              <b>Garlic bread</b><br>
-              Grilled ciabatta, garlic butter, onions
-            </div>
-            <div><span>$9.50</span></div>
-          </div>
-          <hr>
-          <div class="option">
-            <div>
-              <b>Tomozzarella</b><br>
-              Tomatoes and mozzarella
-            </div>
-            <div><span>$10.50</span></div>
+        <img
+          src="https://www.w3schools.com/w3images/onepage_restaurant.jpg"
+          alt=""
+        />
+        <div class="time">
+          <h3>Opening Hours</h3>
+          <div>
+            <section>
+              <p>Mon & Tue CLOSED</p>
+              <br />
+              <p>Wednesday 10.00 - 24.00</p>
+              <br />
+              <p>Thursday 10:00 - 24:00</p>
+            </section>
+            <section>
+              <p>Firday 10:00 - 12:00</p>
+              <br />
+              <p>Saturday 10:00 - 23:00</p>
+              <br />
+              <p>Sunday Closed</p>
+            </section>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ---------------x--------------- The Menu ---------------x--------------- -->
+    <!-- ---------------x--------------- About ---------------x--------------- -->
 
+    <!-- ------------------------------- Contact ------------------------------- -->
 
+    <section id="Contact">
+      <!-- ------------------------------- Full Image Div ------------------------------- -->
+      <section class="full-image">
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="" />
+      </section>
+      <!-- ---------------x--------------- Full Image Div ---------------x--------------- -->
 
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Find us at some address at some place or call us at 05050515-122330
+        </p>
+        <br />
+        <p>
+          <span>FYI!</span> We offer full-service catering for any event, large
+          or small. We understand your needs and we will cater the food to
+          satisfy the biggerst criteria of them all, both look and taste.
+        </p>
 
-<!-- ------------------------------- About ------------------------------- -->
+        <p id="last-p">
+          <b>Reserve</b> a table, ask for today's special or just send us a
+          message:
+        </p>
 
-<section id="About">
-  <div class="container">
-    <h2>About</h2>
-    <div class="text">
-      
-      <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
-      <p><strong>The Chef?</strong> Mr. Italiaono himself</p><br>
-      <div class="para">
-      <p>We are proud of our interiors.</p>
-    </div>
-      <div style="width: 150px;">
-        <img src="https://www.w3schools.com/w3images/chef.jpg" alt="Chef">
+        <!-- ------------------------------- Form ------------------------------- -->
+        <form action="">
+          <input type="text" placeholder="Name" />
+          <input type="number" placeholder="How many people" />
+          <input type="datetime-local" value="2021-09-19T20:00" />
+          <textarea
+            rows="5"
+            placeholder="Message / Special requirements"
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <!-- ---------------x--------------- Form ---------------x--------------- -->
       </div>
-    </div>
-    <img src="https://www.w3schools.com/w3images/onepage_restaurant.jpg" alt="">
-    <div class="time">
-      <h3>Opening Hours</h3>
-      <div>
-        <section>
-          <p>Mon & Tue CLOSED</p><br>
-          <p>Wednesday 10.00 - 24.00</p><br>
-          <p>Thursday 10:00 - 24:00</p>
-        </section>
-        <section>
-          <p>Firday 10:00 - 12:00</p><br>
-      <p>Saturday 10:00 - 23:00</p><br>
-      <p>Sunday Closed</p>
-        </section>
-      </div>
-      
-    </div>
-    
-  </div>
-</section>
+    </section>
 
-<!-- ---------------x--------------- About ---------------x--------------- -->
+    <!-- ---------------x--------------- Contact ---------------x--------------- -->
 
+    <!-- ------------------------------- Footer ------------------------------- -->
 
+    <footer>
+      Reference:
+      <a
+        href="https://www.w3schools.com/css/css_rwd_templates.asp"
+        target="_blank"
+        >w3schools template</a
+      >
+    </footer>
 
+    <!-- ---------------x--------------- Footer ---------------x--------------- -->
 
-
-
-
-
-
-<!-- ------------------------------- Contact ------------------------------- -->
-
-<section id="Contact">
-  
-  <!-- ------------------------------- Full Image Div ------------------------------- -->
-  <section class="full-image">
-    <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
-  </section>
-  <!-- ---------------x--------------- Full Image Div ---------------x--------------- -->
-
-  <div class="container">
-    <h2>Contact</h2>
-    <p>Find us at some address at some place or call us at 05050515-122330</p><br>
-    <p><span>FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-
-    <p id="last-p"><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
-
-    
-
-
-<!-- ------------------------------- Form ------------------------------- -->
-<form action="">
-  <input type="text" placeholder="Name">
-  <input type="number" placeholder="How many people">
-  <input type="datetime-local" value="2021-09-19T20:00">
-  <textarea rows="5" placeholder="Message / Special requirements"></textarea>
-  <button type="submit">Send Message</button>
-</form>
-<!-- ---------------x--------------- Form ---------------x--------------- -->
-</div>
-</section>
-
-
-<!-- ---------------x--------------- Contact ---------------x--------------- -->
-
-
-
-
-<!-- ------------------------------- Footer ------------------------------- -->
-
-<footer>
-  Reference: <a href="https://www.w3schools.com/css/css_rwd_templates.asp" target="_blank">w3schools template</a>
-</footer>
-
-<!-- ---------------x--------------- Footer ---------------x--------------- -->
-
-<script type="text/javascript" src="script.js"></script>
-
-  
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
